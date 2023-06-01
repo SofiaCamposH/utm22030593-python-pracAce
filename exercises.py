@@ -20,20 +20,38 @@ print(footballTeams)
 
 print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
 #A function named operation, that receives 3 params.
-def function(operand,fnumber,snumber):
+def operation(operand,fnumber,snumber):
+    operand = str(operand)
+    fnumber = int(fnumber)
+    snumber = int(snumber)
+    result = 0
+    
     if operand == '+':
-        operation=fnumber + snumber
-    else:
-     if operand == '-':
-        operation=fnumber - snumber
-     else:
-      if operand == '*':
-        operation=fnumber * snumber
-      else:
-         if operand == '/':
-            operation=fnumber / snumber
-            return operation
-         
+        result=fnumber + snumber
+
+    if operand == '-':
+        result=fnumber - snumber
+     
+    if operand == '*':
+        result=fnumber * snumber
+      
+    if operand == '/':
+        if snumber== 0:
+            print("Invalid")
+            result = "error"
+        else:
+            result=fnumber / snumber
+    return result
+    
+print(operation('+', 5, 7)) 
+print(operation('-', 79, 43)) 
+print(operation('*', 4, 6)) 
+print(operation('/', 7, 4)) 
+print(operation('/', 7, 0)) 
+
+
+
+
 
          
 
