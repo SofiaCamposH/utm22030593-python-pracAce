@@ -18,4 +18,25 @@ footballTeams={'FCB':'FC Barcelona','MCI':'Manchester City FC','PSG':'Paris Sain
 del footballTeams["MCI"]
 print(footballTeams)
 
+print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+#A function named operation, that receives 3 params.
+def function(operand,fnumber,snumber):
+    if operand == '+':
+        operation=fnumber + snumber
+    else:
+     if operand == '-':
+        operation=fnumber - snumber
+     else:
+      if operand == '*':
+        operation=fnumber * snumber
+      else:
+         if operand == '/':
+            operation=fnumber / snumber
+            return operation
+         
 
+            
+            
+         
+
+    
