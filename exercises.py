@@ -5,9 +5,17 @@ for item in Countrylist:
     print(item) 
 print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
 #A tuple with 7 items and print it using a while loop.
-animals=("Cat","Dog","Cow","Rabbit","Duck","butterfly","Cricket")
+animals=("Cat","Dog","Cow","Rabbit","Duck","Butterfly","Cricket")
 i=0 
 while i < len(animals):
     print(animals[i])
     i += 1
+
+print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+#A dictionary with 3 properAes, modify any of those and print it.
+
+footballTeams={'FCB':'FC Barcelona','MCI':'Manchester City FC','PSG':'Paris Saint-Germain FC'}	
+del footballTeams["MCI"]
+print(footballTeams)
+
 
