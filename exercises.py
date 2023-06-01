@@ -14,8 +14,8 @@ while i < len(animals):
 print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
 #A dictionary with 3 properAes, modify any of those and print it.
 
-footballTeams={'FCB':'FC Barcelona','MCI':'Manchester City FC','PSG':'Paris Saint-Germain FC'}	
-del footballTeams["MCI"]
+footballTeams={'FCB':'Barcelona','MCI':'Manchester City FC','PSG':'Paris Saint-Germain FC'}	
+footballTeams["FCB"] = 'FC Barcelona'
 print(footballTeams)
 
 print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
@@ -33,6 +33,8 @@ def function(operand,fnumber,snumber):
          if operand == '/':
             operation=fnumber / snumber
             return operation
+         
+
          
 
             
